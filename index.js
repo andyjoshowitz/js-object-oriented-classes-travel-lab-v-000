@@ -23,8 +23,6 @@ class Route{
     return verticalDiff + horizontalDiff;
   }
 
-  //During off peak hours, a driver travels three blocks in a minute,
-  //while during peak hours a driver travels an estimated two blocks in a minute.
   estimatedTime(peak = false) {
     if (peak){
       return (Math.round(this.blocksTravelled() / 2));
